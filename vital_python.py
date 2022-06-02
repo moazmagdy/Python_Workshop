@@ -37,7 +37,16 @@ last_name = "Magdy"
 # print('b' < 'c')
 
 #While loop
-x = 10  #Step1: initialize the variable
-while x >= 1:   #Step2: Setup the while loop (While + variable + condition to run)
-    print(x)    #Step3: add Instructions
-    x -= 1      #Step4: define an incrementor --> Required to stop running forever.
+# x = 10  #Step1: initialize the variable
+# while x >= 1:   #Step2: Setup the while loop (While + variable + condition to run)
+#     print(x)    #Step3: add Instructions
+#     x -= 1      #Step4: define an incrementor --> Required to stop running forever.
+
+#While loop to print the first number > 100 and divisible by 17
+x= 100
+while True:
+    if x % 17 == 0:
+        print(x)
+        break
+    else:
+        x += 1
