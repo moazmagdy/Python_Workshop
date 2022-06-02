@@ -39,5 +39,5 @@ last_name = "Magdy"
 #While loop
 x = 10  #Step1: initialize the variable
 while x >= 1:   #Step2: Setup the while loop (While + variable + condition to run)
-    print(x)    #
-    x -= 1
+    print(x)    #Step3: add Instructions
+    x -= 1      #Step4: define an incrementor --> Required to stop running forever.
