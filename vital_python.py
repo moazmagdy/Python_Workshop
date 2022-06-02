@@ -29,3 +29,16 @@ last_name = "Magdy"
 # print(first_name.lower())
 # print(first_name.count('o'))
 # print(first_name.find('z'))
+
+# print(True + True)
+# print(not True or False and True)
+
+# print(6.0 >= 6)
+# print('b' < 'c')
+
+#While loop
+x = 10
+while x >= 1:
+    print(x)
+    x -= 1
+    
