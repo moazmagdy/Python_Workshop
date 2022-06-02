@@ -60,11 +60,23 @@ last_name = "Magdy"
 #         break
 #     else:
 #         i += 1
-import math
-while True:
-    x = input('Please enter a number to see if it\'s true square: ')
-    number = abs(int(x))
-    number_sqrt = math.sqrt(number)
-    if (number_sqrt - int(number_sqrt)) == 0:
-        print("{0} is a perfect square of {1}".format(number, int(number_sqrt)))
-        break
+# import math
+# while True:
+#     x = input('Please enter a number to see if it\'s true square: ')
+#     number = abs(int(x))
+#     number_sqrt = math.sqrt(number)
+#     if (number_sqrt - int(number_sqrt)) == 0:
+#         print("{0} is a perfect square of {1}".format(number, int(number_sqrt)))
+#         break
+
+# print("one bedroom in the Bay Area is listed at $599,000.")
+# offer = abs(int(input("Enter your first offer on the house.")))
+# best = abs(int(input("Enter your best offer on the house.")))
+# increment = abs(int(input("How much more do you want to offer each time?")))
+# while True:
+#     if offer >= 650000:
+#         print('Your offer of', offer, 'has been accepted!')
+#         break
+#     else:
+#         print("We're sorry, your offer of {} has not been accepted.".format(offer))
+#         offer += increment
