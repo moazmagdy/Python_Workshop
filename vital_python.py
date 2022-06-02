@@ -52,11 +52,19 @@ last_name = "Magdy"
 #         x += 1
 
 #Find the Least common multiple
-x, y = 24, 36
-i = min(x,y)
+# x, y = 24, 36
+# i = min(x,y)
+# while True:
+#     if (i % x == 0) and (i % y ==0):
+#         print('The LCM is: ', i)
+#         break
+#     else:
+#         i += 1
+import math
 while True:
-    if (i % x == 0) and (i % y ==0):
-        print('The LCM is: ', i)
+    x = input('Please enter a number to see if it\'s true square: ')
+    number = abs(int(x))
+    number_sqrt = math.sqrt(number)
+    if (number_sqrt - int(number_sqrt)) == 0:
+        print("{0} is a perfect square of {1}".format(number, int(number_sqrt)))
         break
-    else:
-        i += 1
