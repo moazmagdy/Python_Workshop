@@ -43,10 +43,20 @@ last_name = "Magdy"
 #     x -= 1      #Step4: define an incrementor --> Required to stop running forever.
 
 #While loop to print the first number > 100 and divisible by 17
-x= 100
+# x= 100
+# while True:
+#     if x % 17 == 0:
+#         print(x)
+#         break
+#     else:
+#         x += 1
+
+#Find the Least common multiple
+x, y = 24, 36
+i = min(x,y)
 while True:
-    if x % 17 == 0:
-        print(x)
+    if (i % x == 0) and (i % y ==0):
+        print('The LCM is: ', i)
         break
     else:
-        x += 1
+        i += 1
