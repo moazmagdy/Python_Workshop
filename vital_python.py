@@ -80,3 +80,16 @@ last_name = "Magdy"
 #     else:
 #         print("We're sorry, your offer of {} has not been accepted.".format(offer))
 #         offer += increment
+
+# for i in range(0,10,2):
+#     print(i)
+# name = "Moaz"
+# for i in name:
+#     for x in range(3):
+#         print(i)
+
+# questions = ["What's You're name?", "How old are you?"]
+
+# for i in range(2):
+#     ans = input(questions[i])
+#     print("See! ", ans)
