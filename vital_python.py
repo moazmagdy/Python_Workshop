@@ -37,8 +37,7 @@ last_name = "Magdy"
 # print('b' < 'c')
 
 #While loop
-x = 10
-while x >= 1:
-    print(x)
+x = 10  #Step1: initialize the variable
+while x >= 1:   #Step2: Setup the while loop (While + variable + condition to run)
+    print(x)    #
     x -= 1
-    
