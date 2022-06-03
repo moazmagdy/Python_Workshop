@@ -101,3 +101,14 @@ last_name = "Magdy"
 # for i in matrix:
 #     for j in i:
 #         print(j)
+
+employee_data = [["Name", "Age", "Department"],
+                ["John Makee", 38, "Sales"],
+                ["Ahmed", 29, "Logistics"],
+                ["Mourad", 32, "Quality"]]
+
+for i in range(1, len(employee_data)):
+    print("Name: ", employee_data[i][0])
+    print("Age: ", employee_data[i][1])
+    print("Department: ", employee_data[i][2])
+
