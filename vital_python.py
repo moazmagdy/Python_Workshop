@@ -94,4 +94,5 @@ last_name = "Magdy"
 #     ans = input(questions[i])
 #     print("See! ", ans)
 
-
+matrix = [["Apple", "Banana", "Orange"], [4,5,6], [7,8,9]]
+print(matrix)
