@@ -67,17 +67,24 @@ result= [[0,0,0,0],
 # movie['earnings'] = 1000000
 # print(movie['earnings'])
 
-emploee = [{"Name": "Ayman", "Age": 39, "Department": "Sales"},
-{"Name": "Anne", "Age": 32, "Department": "IT"},
-{"Name": "Mezo", "Age": 43, "Department": "Production"}
-]
+# emploee = [{"Name": "Ayman", "Age": 39, "Department": "Sales"},
+# {"Name": "Anne", "Age": 32, "Department": "IT"},
+# {"Name": "Mezo", "Age": 43, "Department": "Production"}
+# ]
 
 # employee = {1: {"Name": "Ayman", "Age": 39, "Department": "Sales"},
 # 2: {"Name": "Anne", "Age": 32, "Department": "IT"},
 # 3: {"Name": "Mezo", "Age": 43, "Department": "Production"}}
 
-for i in emploee:
-    print("Name:", i['Name'])
-    print("Age:", i['Age'])
-    print("Department:", i['Department'])
-    print('-'*30)
+# for i in emploee:
+#     print("Name:", i['Name'])
+#     print("Age:", i['Age'])
+#     print("Department:", i['Department'])
+#     print('-'*30)
+
+items = ['apple', 'orange', 'banana']
+quantity = [5,3,2]
+orders = zip(items,quantity)
+# print(dict(orders))
+# print(list(orders))
+print(tuple(orders))
