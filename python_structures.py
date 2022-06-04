@@ -54,3 +54,15 @@ result= [[0,0,0,0],
 # x.remove(2)
 # print(x)
 
+# x = {"1": 1.2, "2": "Mohsen"}
+# print(x.update(["2", "Ayman"]))
+
+# movie = {
+# "title": "The Godfather",
+# "director": "Francis Ford Coppola",
+# "year": 1972,
+# "rating": 9.2
+# }
+# print(movie['title'])
+# movie['earnings'] = 1000000
+# print(movie['earnings'])
