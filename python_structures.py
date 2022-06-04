@@ -91,4 +91,10 @@ orders = zip(items,quantity)
 # for i in orders:
 #     print(i)
 
-print(list(dict(orders).values()))
+# print(list(dict(orders).values()))
+
+# for i in dict(orders).items():
+#     print(i)
+
+shopping = ('Egg', 'Apple', 'Orange')
+print(shopping+('Lemon','banana'))
