@@ -50,4 +50,6 @@ result= [[0,0,0,0],
 # print(len(shopping))
 
 x = [1,2,3]
-print(x*3)
+# x.insert(1,5)
+x.remove(2)
+print(x)
