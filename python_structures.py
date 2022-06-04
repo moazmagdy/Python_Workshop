@@ -49,7 +49,8 @@ result= [[0,0,0,0],
 # shopping = ["bread","milk", "eggs"]
 # print(len(shopping))
 
-x = [1,2,3]
-# x.insert(1,5)
-x.remove(2)
-print(x)
+# x = [1,2,3]
+# # x.insert(1,5)
+# x.remove(2)
+# print(x)
+
