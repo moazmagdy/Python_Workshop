@@ -88,5 +88,7 @@ orders = zip(items,quantity)
 # print(dict(orders))
 # print(list(orders))
 # print(tuple(orders))
-for i in orders:
-    print(i)
+# for i in orders:
+#     print(i)
+
+print(list(dict(orders).values()))
