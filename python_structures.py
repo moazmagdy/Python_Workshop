@@ -96,5 +96,9 @@ orders = zip(items,quantity)
 # for i in dict(orders).items():
 #     print(i)
 
-shopping = ('Egg', 'Apple', 'Orange')
-print(shopping+('Lemon','banana'))
+# shopping = ('Egg', 'Apple', 'Orange')
+# print(shopping+('Lemon','banana'))
+
+t = "Ahmed", 33, True
+t += "Mike", False
+print(t)
