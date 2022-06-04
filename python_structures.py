@@ -18,6 +18,9 @@
 #     print("-------------------------")
 
 
+from distutils.ccompiler import show_compilers
+
+
 x = [[1,2],[4,5],[3,6]]
 y = [[1,2,3,4],[5,6,7,8]]
 
@@ -99,8 +102,16 @@ orders = zip(items,quantity)
 # shopping = ('Egg', 'Apple', 'Orange')
 # print(shopping+('Lemon','banana'))
 
-t = "Ahmed", 33, True, "Ahmed"
+# t = "Ahmed", 33, True, "Ahmed"
 # t += "Mike", False
 # print(t)
 # print(t.count("Ahmed"))
-print(t.index(33))
+# print(t.index(33))
+# shopping = {"Apple", "Orange", "Apple", "Egg"}
+# # print(shopping.union({'Cucumber','Garlic'}))
+# print(shopping)
+# shopping.add('Cucumber')
+
+s1 = {1, 2, 3, 4}
+s2 = {3, 4, 5, 6}
+print(s1.union(s2))
