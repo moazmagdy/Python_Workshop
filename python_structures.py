@@ -99,6 +99,8 @@ orders = zip(items,quantity)
 # shopping = ('Egg', 'Apple', 'Orange')
 # print(shopping+('Lemon','banana'))
 
-t = "Ahmed", 33, True
-t += "Mike", False
-print(t)
+t = "Ahmed", 33, True, "Ahmed"
+# t += "Mike", False
+# print(t)
+# print(t.count("Ahmed"))
+print(t.index(33))
