@@ -10,7 +10,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 import operator
 import functools
 
-nums = [3, 2, 4]
+nums = [3,2,4]
 target = 6
 def twoSum(nums, target):
         """
@@ -18,8 +18,9 @@ def twoSum(nums, target):
         :type target: int
         :rtype: List[int]
         """
-        x = [[[i,j] for j in range(1, len(nums)) if ((nums[i] + nums[j]) == target) \
-             and (i != j)] for i in range(len(nums))]
-        return functools.reduce(operator.iconcat,x,[])
+
+        x = [[i,j] for i in range(len(nums)) for j in range(1, len(nums)) if ((nums[i]+nums[j])==target)and (i!= j)]
+        return functools.reduce(operator.iconcat,[x],[])
+
 
 print(twoSum(nums, target))
