@@ -113,5 +113,13 @@ orders = zip(items,quantity)
 # shopping.add('Cucumber')
 
 s1 = {1, 2, 3, 4}
-s2 = {3, 4, 5, 6}
-print(s1.union(s2))
+s2 = {1, 2, 3, 4, 5, 6}
+# print(s1 | s2)
+# print(s1 & s2)
+# print(s1-s2)
+# print(s2- s1)
+# s1.difference_update(s2)
+# print(s1, s2)
+# print(s1.issubset(s2))
+# print(s1 <= s2)
+print(s2 >= s2)
