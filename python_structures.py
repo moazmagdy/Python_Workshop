@@ -32,16 +32,22 @@ result= [[0,0,0,0],
 
 #Multiplication of two matrices
 
-for i in range(len(x)):
-     for j in range(len(y[0])):
-        for k in range(len(y)):
-            result[i][j] += x[i][k] * y[k][j]
-        # print(i,j)
-        # print(result)
-        j += 1
-     i += 1
+# for i in range(len(x)):
+#      for j in range(len(y[0])):
+#         for k in range(len(y)):
+#             result[i][j] += x[i][k] * y[k][j]
+#         # print(i,j)
+#         # print(result)
+#         j += 1
+#      i += 1
 
-print(result)
+# print(result)
 
-import numpy as np
-print(np.dot(x,y))
+# import numpy as np
+# print(np.dot(x,y))
+
+# shopping = ["bread","milk", "eggs"]
+# print(len(shopping))
+
+x = [1,2,3]
+print(x*3)
