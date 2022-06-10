@@ -15,10 +15,10 @@ def binary_search(x, search_value):
         while still_divisble:
             still_divisble = False
             if x[mid_pt] < search_value:
-                mid_pt += (len(x)-mid_pt)//2
+                mid_pt += int((len(x)-mid_pt))
                 still_divisble = True
             elif x[mid_pt] > search_value:
-                mid_pt -= mid_pt//2
+                mid_pt -= int((len(x)-mid_pt))
                 still_divisble = True
             else:
                 result = mid_pt
