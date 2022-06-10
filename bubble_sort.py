@@ -6,14 +6,13 @@ This file implements the bubble sort algorithm which works as follows:
 4. Then, repeat steps 1 to 3 until no more swaps.
 """
 def bubbleSort(x):
-    y =[0]*len(x)
-    while True:
-        for i in x:
+    still_swapping = True
+    while still_swapping:
+        still_swapping = False
+        for i in range(len(x)-1):
             if  x[i] > x[i+1]:
-                y[i], y[i+1] = x[i+1], x[i]
-            else:
-                y[i], y[i+1] = x[i], x[i+1]
-            
+                x[i], x[i+1] = x[i+1], x[i]
+                still_swapping = True
 
     if __name__ == '__main__':
         print(x)
