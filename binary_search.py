@@ -9,22 +9,21 @@ remaining values.
 """
 
 def binary_search(x, search_value):
-    still_divisble = True
-    mid_pt = len(x)//2
-    if search_value in x:
-        while still_divisble:
-            still_divisble = False
-            if x[mid_pt] < search_value:
-                mid_pt += int((len(x)-mid_pt))
-                still_divisble = True
-            elif x[mid_pt] > search_value:
-                mid_pt -= int((len(x)-mid_pt))
-                still_divisble = True
+    found = False   #Binary value to control iterations
+    slice_start = 0       #Start index of sublist
+    slice_end = len(x) - 1    #End index of sublist
+    while slice_start <= slice_end and not found:
+        location = (slice_start + slice_end) // 2
+        if x[location] == search_value:
+            found = True
+        else:
+            if search_value < x[location]:
+                slice_end = location - 1
             else:
-                result = mid_pt
-        if __name__ == '__main__':
+                slice_start = location + 1
 
-            print("Your search value of {0} is in index {1}".format(search_value, result))
+    if __name__ == '__main__':
+        print("Your search value of {0} is in index {1}".format(search_value, location))
     else:
         print("{0} is not in {1}".format(search_value, x))
 
