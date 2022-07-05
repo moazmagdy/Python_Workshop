@@ -4,9 +4,12 @@ store the results in a dictionary, and the function
 will use the stored results to return the answer
 in fewer iterations.
 """
+import time
+
 stored_results = {}
 
-def sum_to_n(n): 
+def sum_to_n(n):
+    start_time = time.perf_counter() 
     result = 0
     for i in reversed(range(n)):
         if i + 1 in stored_results:
@@ -16,6 +19,6 @@ def sum_to_n(n):
         else:
             result += i + 1
     stored_results[n] = result
-    return result
+    return result, print(time.perf_counter() - start_time, "seconds")
 
 print(sum_to_n(8))
