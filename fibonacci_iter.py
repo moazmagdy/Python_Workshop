@@ -11,6 +11,4 @@ def fibonacci_itr(n):
         current_old = current
         current = current + previous
         previous = current_old
-    return print(current)
-
-fibonacci_itr(8)
+    return current
