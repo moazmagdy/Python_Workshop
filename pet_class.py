@@ -7,14 +7,14 @@ class pet():
     A class to capture useful information regarding my pets, just incase
     I lose track of them.
     """
-    def __init__(self, height= 5, gender= ["male", "female"]):
+    def __init__(self, height= 5, gender='unknown'):
         self.height = height
         self.gender = gender
 
     is_human = False
     owner = "Moaz Magdy"
 
-aww = pet(height= 15, gender='male')
+aww = pet(height= 15)
 
 print(aww.is_human,"\n",
         aww.owner,"\n",
