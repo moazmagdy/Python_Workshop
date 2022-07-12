@@ -1,4 +1,7 @@
 class country():
+    has_flag = True
+    has_government = True
+
     def __init__(self, country_name= "Unspecified", population= None, size_kmsq= None):
         self.name = country_name
         self.population = population
@@ -14,9 +17,18 @@ class country():
     def is_african(country_name):
         return country_name in ['Nigeria', 'Ethiopia', 'Egypt', 'DR Congo', 'Tanzania', 'South Africa']
 
+    @classmethod
+    def independent(cls):
+        return cls.has_flag and cls.has_government
+
+    @classmethod
+    def convert_to_milesq(cls, country_name, population, size_kmsq):
+        size_milesq = size_kmsq * 0.386102
+        return cls(country_name, population, size_milesq)
 
 egypt = country(country_name= "Egypt", population= 10**8, size_kmsq= 10**6)
 
 # print(egypt.size_milesq(0.62))
 # print(egypt.__dict__)
-print(egypt, egypt.is_african("Egypt"))
+# print(egypt, egypt.is_african("Egypt"))
+# print(country.independent())
