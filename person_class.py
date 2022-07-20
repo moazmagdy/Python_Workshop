@@ -13,6 +13,16 @@ class person():
         self.first_name = first
         self.last_name = last
 
-customer = person("Moaz", "Magdy")
-customer.full_name = 'Ayman Hamdy'
-print(customer.full_name)
+class baby(person):
+    def speak(self):
+        print('Blah blah blah')
+
+class adult(person):
+    def speak(self):
+        print('Hello my name is {}'.format(self.first_name))
+
+my_baby = baby('Mohsen', 'Ali')
+my_adult = adult('Fawzy', 'Mohamed')
+
+my_baby.speak()
+my_adult.speak()
