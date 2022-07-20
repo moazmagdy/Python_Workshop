@@ -21,8 +21,15 @@ class adult(person):
     def speak(self):
         print('Hello my name is {}'.format(self.first_name))
 
+class talktive_adult(adult):
+    def speak(self):
+        super().speak()
+        print('It is a pleasure to meet you!')
+
 my_baby = baby('Mohsen', 'Ali')
 my_adult = adult('Fawzy', 'Mohamed')
+my_talktive = talktive_adult('Marwa', 'Magdy')
 
 my_baby.speak()
 my_adult.speak()
+my_talktive.speak()
